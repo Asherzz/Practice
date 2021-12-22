@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practice1.MainPage">
+    <StackLayout Margin="20,35,20,25">
+        <Label Text="Start"
+           HorizontalOptions="Start"
+           BackgroundColor="Gray" />
+        <Label Text="Center"
+           HorizontalOptions="Center"
+           BackgroundColor="Gray" />
+        <Label Text="End"
+           HorizontalOptions="End"
+           BackgroundColor="Gray" />
+        <Label Text="Fill"
+           HorizontalOptions="Fill"
+           BackgroundColor="Gray" />
+        <Label Text="StartAndExpand"
+           VerticalOptions="StartAndExpand"
+           BackgroundColor="Gray" />
+        <Label Text="CenterAndExpand"
+           VerticalOptions="CenterAndExpand"
+           BackgroundColor="Gray" />
+        <Label Text="EndAndExpand"
+           VerticalOptions="EndAndExpand"
+           BackgroundColor="Gray" />
+        <Label Text="FillAndExpand"
+           VerticalOptions="FillAndExpand"
+           BackgroundColor="Gray" />
+        <Label TextColor="Gray"
+       FontSize="Medium">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="This sentence contains " />
+                    <Span Text="words that are emphasized, "
+                  FontAttributes="Italic" />
+                    <Span Text="and underlined."
+                  TextDecorations="Underline" />
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+        <Button Text="Click me"
+        Clicked="OnButtonClicked"
+        TextColor="Blue"
+        BackgroundColor="Aqua"
+        BorderColor="Red"
+        BorderWidth="5"
+        CornerRadius="5"
+        WidthRequest="150"
+        HeightRequest="75" />
+        <Entry Placeholder="Enter password"
+       MaxLength="15"
+       IsSpellCheckEnabled="false"
+       IsTextPredictionEnabled="false"
+       IsPassword="true" />
+        <Editor Placeholder="Enter multi-line text here"
+        AutoSize="TextChanges"
+        MaxLength="200"
+        IsSpellCheckEnabled="false"
+        IsTextPredictionEnabled="false" />
+    </StackLayout>
+</ContentPage>
